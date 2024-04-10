@@ -21,7 +21,7 @@
   </group>
 
   <!-- pose_initializer (Automatic call from AD API) -->
-  <group>
+  <group if="$(var gnss_enabled)">
     <include file="$(find-pkg-share automatic_pose_initializer)/launch/automatic_pose_initializer.launch.xml"/>
   </group>
 
